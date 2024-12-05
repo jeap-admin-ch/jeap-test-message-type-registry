@@ -1,0 +1,8 @@
+@namespace("ch.admin.bit.jme.test")
+protocol BeanReferenceMessageKeyProtocol {
+  record BeanReferenceMessageKey {
+    string name;
+    string namespace;
+    string id;
+  }
+}

@@ -1,0 +1,6 @@
+@namespace("ch.admin.bit.jme.test")
+protocol SomeEnumProtocol {
+  enum SomeEnum {
+    A, B
+  }
+}

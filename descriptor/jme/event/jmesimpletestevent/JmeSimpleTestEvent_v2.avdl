@@ -1,0 +1,24 @@
+@namespace("ch.admin.bit.jme.test")
+protocol JmeSimpleTestEventProtocol {
+  import idl "DomainEventBaseTypes.avdl";
+  import idl "ch.admin.bit.jme.test.BeanReference.avdl";
+
+  record JmeSimpleTestEventReferences {
+    union{null, BeanReference} sendingBean = null;
+  }
+
+  record JmeSimpleTestEventPayload {
+    string message;
+    union {null, string} test = null;
+  }
+
+  record JmeSimpleTestEvent {
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventIdentity identity;
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventType type;
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventPublisher publisher;
+    JmeSimpleTestEventReferences references;
+    JmeSimpleTestEventPayload payload;
+    union {null, string} processId = null;
+    string domainEventVersion = "1.1.0";
+  }
+}

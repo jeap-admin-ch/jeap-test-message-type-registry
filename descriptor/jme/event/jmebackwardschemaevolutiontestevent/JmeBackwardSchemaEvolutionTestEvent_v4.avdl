@@ -1,0 +1,23 @@
+@namespace("ch.admin.bit.jme.test.v2")
+protocol JmeBackwardSchemaEvolutionTestEventProtocol {
+  import idl "DomainEventBaseTypes.avdl";
+  import idl "ch.admin.bit.jme.test.BeanReference.avdl";
+
+  record JmeBackwardSchemaEvolutionTestEventReferences {
+  }
+
+  record JmeBackwardSchemaEvolutionTestEventPayload {
+    string message;
+    union {null, string} test = null;
+  }
+
+  record JmeBackwardSchemaEvolutionTestEvent {
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventIdentity identity;
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventType type;
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventPublisher publisher;
+    JmeBackwardSchemaEvolutionTestEventReferences references;
+    JmeBackwardSchemaEvolutionTestEventPayload payload;
+    union {null, string} processId = null;
+    string domainEventVersion = "1.1.0";
+  }
+}

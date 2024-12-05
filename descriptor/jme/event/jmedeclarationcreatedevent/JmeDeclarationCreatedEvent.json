@@ -1,0 +1,15 @@
+{
+  "eventName": "JmeDeclarationCreatedEvent",
+  "publishingSystem": "JME",
+  "description": "Customs declaration created event",
+  "documentationUrl": "https://github.com/jeap-admin-ch/jeap",
+  "topic": "jme-messaging-declaration-created",
+  "scope": "internal",
+  "versions": [
+    {
+      "version": "1.4.0",
+      "valueSchema": "JmeDeclarationCreatedEvent_v1.4.0.avdl",
+      "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl"
+    }
+  ]
+}
