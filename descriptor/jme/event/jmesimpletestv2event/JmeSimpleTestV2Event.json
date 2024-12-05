@@ -1,0 +1,21 @@
+{
+  "eventName": "JmeSimpleTestV2Event",
+  "publishingSystem": "JME",
+  "description": "A simple event to be used only in tests",
+  "documentationUrl": "https://github.com/jeap-admin-ch/jeap",
+  "topic": "jme-simple-test-event",
+  "scope": "internal",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "valueSchema": "JmeSimpleTestV2Event_v1.avdl",
+      "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl",
+      "compatibilityMode": "BACKWARD"
+    }, {
+      "version": "2.0.0",
+      "valueSchema": "JmeSimpleTestV2Event_v2.avdl",
+      "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl",
+      "compatibilityMode": "BACKWARD"
+    }
+  ]
+}

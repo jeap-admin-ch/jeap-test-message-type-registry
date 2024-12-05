@@ -1,0 +1,20 @@
+@namespace("ch.admin.bit.jme.test")
+protocol JmeEnumTestV2EventProtocol {
+  import idl "DomainEventBaseTypes.avdl";
+  import idl "ch.admin.bit.jme.test.SomeEnum.avdl";
+  import idl "ch.admin.bit.jme.test.v2.SomeEnum.avdl";
+
+  record JmeEnumTestV2EventPayload {
+    string message;
+    union {null, ch.admin.bit.jme.test.SomeEnum, ch.admin.bit.jme.test.v2.SomeEnum} myEnum;
+  }
+
+  record JmeEnumTestV2Event {
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventIdentity identity;
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventType type;
+    ch.admin.bit.jeap.domainevent.avro.AvroDomainEventPublisher publisher;
+    JmeEnumTestV2EventPayload payload;
+    union {null, string} processId = null;
+    string domainEventVersion = "1.1.0";
+  }
+}
