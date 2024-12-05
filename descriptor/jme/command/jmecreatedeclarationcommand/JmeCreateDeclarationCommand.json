@@ -1,0 +1,14 @@
+{
+  "commandName": "JmeCreateDeclarationCommand",
+  "definingSystem": "JME",
+  "description": "Initiate the creation of a customs declaration.",
+  "documentationUrl": "https://github.com/jeap-admin-ch/jeap",
+  "topic": "jme-messaging-create-declaration",
+  "scope": "public",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "valueSchema": "JmeCreateDeclarationCommand_v1.0.0.avdl"
+    }
+  ]
+}

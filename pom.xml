@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <url>https://github.com/jeap-admin-ch/jeap-test-message-type-registry</url>
+    <scm>
+        <url>https://github.com/jeap-admin-ch/jeap-test-message-type-registry</url>
+    </scm>
+    <developers>
+        <developer>
+            <name>BIT</name>
+            <organization>Federal Office of Information Technology, Systems and Telecommunication FOITT</organization>
+            <organizationUrl>https://www.bit.admin.ch/</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <parent>
+        <groupId>ch.admin.bit.jeap</groupId>
+        <artifactId>jeap-spring-boot-parent</artifactId>
+        <version>26.17.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>ch.admin.bit.jeap.messaging.test</groupId>
+    <artifactId>jeap-test-message-type-registry</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <jeap.messagetypes.compile.skip>false</jeap.messagetypes.compile.skip>
+        <!-- Do not deploy the pom artifact for jme-message-type-registry, this pom is only used to control the build -->
+        <maven.deploy.skip>true</maven.deploy.skip>
+        <registry-git-url>https://bitbucket.bit.admin.ch/scm/jeap/jeap-test-message-type-registry.git</registry-git-url>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>ch.admin.bit.jeap</groupId>
+            <artifactId>jeap-messaging-avro</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>ch.admin.bit.jeap</groupId>
+                <artifactId>jeap-messaging-registry-maven-plugin</artifactId>
+                <version>${jeap-messaging.version}</version>
+                <configuration>
+                    <gitUrl>${registry-git-url}</gitUrl>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generateAvdl</goal>
+                            <goal>registry</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>pl.project13.maven</groupId>
+                <artifactId>git-commit-id-plugin</artifactId>
+                <version>4.9.10</version>
+                <configuration>
+                    <skipPoms>false</skipPoms>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>ch.admin.bit.jeap</groupId>
+                <artifactId>jeap-messaging-avro-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <!-- Disable default execution from parent -->
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <id>compile-message-types</id>
+                        <goals>
+                            <goal>compile-message-types</goal>
+                        </goals>
+                        <configuration>
+                            <generateAllMessageTypes>false</generateAllMessageTypes>
+                            <gitUrl>${registry-git-url}</gitUrl>
+                            <jeapMessagingVersion>${jeap-messaging.version}</jeapMessagingVersion>
+                            <groupIdPrefix>ch.admin.jeap.messaging.test.messagetype</groupIdPrefix>
+                            <trunkBranchName>master</trunkBranchName>
+                            <skip>${jeap.messagetypes.compile.skip}</skip>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-message-type-artifacts</id>
+                        <goals>
+                            <goal>deploy-message-type-artifacts</goal>
+                        </goals>
+                        <configuration>
+                            <mavenDeployGoal>deploy</mavenDeployGoal>
+                            <parallel>false</parallel>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Check third-party license compliance -->
+            <plugin>
+                <groupId>org.honton.chas</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+            </plugin>
+            <!-- Generate third-party license list -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,18 @@
+# IntelliJ
+*.iml
+.idea/*
+!.idea/runConfigurations
+!.idea/runConfigurations/*.xml
+!.idea/codeStyles/*.xml
+
+# Maven
+target/
+*/pom.xml.versionsBackup
+
+*.log
+/lsp/conf/xml.json
+
+settings.xml
+
+.project
+.settings/

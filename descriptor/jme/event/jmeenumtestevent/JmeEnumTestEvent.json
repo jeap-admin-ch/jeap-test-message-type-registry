@@ -1,0 +1,24 @@
+{
+  "eventName": "JmeEnumTestEvent",
+  "publishingSystem": "JME",
+  "description": "A enum event to be used only in tests",
+  "documentationUrl": "https://github.com/jeap-admin-ch/jeap",
+  "topic": "jme-enum-test-event",
+  "scope": "internal",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "valueSchema": "JmeEnumTestEvent_v1.avdl"
+    },
+    {
+      "version": "1.0.1",
+      "valueSchema": "JmeEnumTestEvent_v2.avdl",
+      "compatibilityMode": "BACKWARD"
+    },
+    {
+      "version": "3.0.0",
+      "valueSchema": "JmeEnumTestEvent_v3.avdl",
+      "compatibilityMode": "BACKWARD"
+    }
+  ]
+}

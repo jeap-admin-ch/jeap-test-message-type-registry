@@ -1,0 +1,33 @@
+{
+  "eventName": "JmeBackwardSchemaEvolutionTestEvent",
+  "publishingSystem": "JME",
+  "description": "A simple event to demonstrate backward schema evolution",
+  "documentationUrl": "https://github.com/jeap-admin-ch/jeap",
+  "topic": "jme-backward-schema-evolution-test-event",
+  "scope": "internal",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "valueSchema": "JmeBackwardSchemaEvolutionTestEvent_v1.avdl",
+      "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl"
+    },
+    {
+      "version": "2.0.0",
+      "valueSchema": "JmeBackwardSchemaEvolutionTestEvent_v2.avdl",
+      "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl",
+      "compatibilityMode": "BACKWARD"
+    },
+    {
+      "version": "3.0.0",
+      "valueSchema": "JmeBackwardSchemaEvolutionTestEvent_v3.avdl",
+      "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl",
+      "compatibilityMode": "NONE"
+    },
+    {
+      "version": "4.0.0",
+      "valueSchema": "JmeBackwardSchemaEvolutionTestEvent_v4.avdl",
+      "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl",
+      "compatibilityMode": "BACKWARD"
+    }
+  ]
+}
