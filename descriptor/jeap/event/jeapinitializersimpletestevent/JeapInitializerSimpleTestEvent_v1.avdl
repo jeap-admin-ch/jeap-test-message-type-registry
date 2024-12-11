@@ -1,0 +1,21 @@
+@namespace("ch.admin.bit.jeap.initializer.test")
+protocol JeapInitializerSimpleTestEventProtocol {
+	import idl "DomainEventBaseTypes.avdl";
+
+	record JeapInitializerSimpleTestEventReferences {
+	}
+
+	record JeapInitializerSimpleTestEventPayload {
+		string message;
+	}
+
+	record JeapInitializerSimpleTestEvent {
+		ch.admin.bit.jeap.domainevent.avro.AvroDomainEventIdentity identity;
+		ch.admin.bit.jeap.domainevent.avro.AvroDomainEventType type;
+		ch.admin.bit.jeap.domainevent.avro.AvroDomainEventPublisher publisher;
+		JeapInitializerSimpleTestEventReferences references;
+		JeapInitializerSimpleTestEventPayload payload;
+		union {null, string} processId = null;
+		string domainEventVersion = "1.1.0";
+	}
+}
