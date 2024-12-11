@@ -1,0 +1,14 @@
+{
+  "eventName": "JeapInitializerSimpleTestEvent",
+  "publishingSystem": "JEAP",
+  "description": "A simple event used in jEAP Initializer",
+  "documentationUrl": "https://github.com/jeap-admin-ch/jeap",
+  "topic": "jeap-initializer-simple-test-event",
+  "scope": "internal",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "valueSchema": "JeapInitializerSimpleTestEvent_v1.avdl"
+    }
+  ]
+}
