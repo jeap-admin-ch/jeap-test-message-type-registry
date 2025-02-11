@@ -1,7 +1,6 @@
 @namespace("ch.admin.bit.jme.test.v2")
 protocol JmeBackwardSchemaEvolutionTestEventProtocol {
   import idl "DomainEventBaseTypes.avdl";
-  import idl "ch.admin.bit.jme.test.BeanReference.avdl";
 
   record JmeBackwardSchemaEvolutionTestEventReferences {
   }
