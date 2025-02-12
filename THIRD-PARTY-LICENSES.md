@@ -5,7 +5,7 @@ Third-Party Dependency Licenses
 Third-party dependencies grouped by their license type (see [pom.xml](/pom.xml) for version information):
 
 
-Apache License, Version 2.0
+Apache License Version 2.0
 -------------------------------
 
  * jeap-messaging-avro - [ch.admin.bit.jeap:jeap-messaging-avro](https://github.com/jeap-admin-ch/jeap-messaging/tree/main/jeap-messaging-avro)
