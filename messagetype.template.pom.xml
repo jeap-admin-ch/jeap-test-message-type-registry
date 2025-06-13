@@ -8,7 +8,8 @@
     <version>${version}</version>
     <packaging>jar</packaging>
     <description>Messsage Type ${artifactId} used jEAP-internally in integration tests</description>
-    
+    <name>${project.groupId}:${project.artifactId}</name>
+  
     <url>https://github.com/jeap-admin-ch/jeap-test-message-type-registry/tree/main</url>
     <scm>
         <url>https://github.com/jeap-admin-ch/jeap-test-message-type-registry.git</url>
