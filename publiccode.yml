@@ -1,7 +1,7 @@
 publiccodeYmlVersion: 0.4.0
 name: jeap-test-message-type-registry
 applicationSuite: jEAP
-softwareVersion: 0.14.0-20250808103329
+softwareVersion: 0.14.0-20250808103437
 releaseDate: 2025-08-08
 url: "https://github.com/jeap-admin-ch/jeap-test-message-type-registry.git"
 landingURL: "https://github.com/jeap-admin-ch/jeap"
