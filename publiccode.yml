@@ -1,8 +1,6 @@
 publiccodeYmlVersion: 0.4.0
 name: jeap-test-message-type-registry
 applicationSuite: jEAP
-softwareVersion: 0.14.0-20250808104953
-releaseDate: 2025-08-08
 url: "https://github.com/jeap-admin-ch/jeap-test-message-type-registry.git"
 landingURL: "https://github.com/jeap-admin-ch/jeap"
 platforms:
@@ -14,11 +12,12 @@ softwareType: library
 description:
   en:
     localisedName: jeap-test-message-type-registry
-    shortDescription: TODO (Max. 150 characters)
+    shortDescription: jEAP message type definitions used by integration tests in jeap-messaging - not for productive use
     longDescription: >
-      TODO (Min. 150 characters)
+      This repository contains message type definitions used by integration tests in the jEAP messaging module. 
+      It is not intended for productive use and should not serve as a template for a message type registry.
     features:
-      - TODO
+      - jEAP message type definitions for the use in integration tests
 legal:
   license: Apache-2.0
 maintenance:
