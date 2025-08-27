@@ -10,6 +10,12 @@
       "version": "1.4.0",
       "valueSchema": "JmeDeclarationCreatedEvent_v1.4.0.avdl",
       "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl"
+    },
+    {
+      "version": "1.5.0",
+      "valueSchema": "JmeDeclarationCreatedEvent_v1.5.0.avdl",
+      "keySchema": "ch.admin.bit.jme.test.BeanReferenceMessageKey.avdl",
+      "compatibilityMode": "BACKWARD"
     }
   ]
 }
