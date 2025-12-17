@@ -42,12 +42,6 @@ Apache License Version 2.0
  * spring-boot - [org.springframework.boot:spring-boot](https://spring.io/projects/spring-boot)
  * spring-boot-autoconfigure - [org.springframework.boot:spring-boot-autoconfigure](https://spring.io/projects/spring-boot)
 
-BSD License 3
--------------------------------
-
- * commons-compiler - [org.codehaus.janino:commons-compiler](http://janino-compiler.github.io/commons-compiler/)
- * janino - [org.codehaus.janino:janino](http://janino-compiler.github.io/janino/)
-
 Eclipse Public License, Version 1.0
 -------------------------------
 
