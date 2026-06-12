@@ -61,11 +61,15 @@ Apache License Version 2.0
  * Jackson-core - [tools.jackson.core:jackson-core](https://github.com/FasterXML/jackson-core)
  * jackson-databind - [tools.jackson.core:jackson-databind](https://github.com/FasterXML/jackson)
 
-Eclipse Public License v2.0
+EPL-2.0
 -------------------------------
 
  * Logback Classic Module - [ch.qos.logback:logback-classic](http://logback.qos.ch/logback-classic)
  * Logback Core Module - [ch.qos.logback:logback-core](http://logback.qos.ch/logback-core)
+
+Eclipse Public License v2.0
+-------------------------------
+
  * Jakarta Annotations API - [jakarta.annotation:jakarta.annotation-api](https://projects.eclipse.org/projects/ee4j.ca)
 
 GNU General Public License, version 2 (GPL2), with the classpath exception
@@ -73,7 +77,7 @@ GNU General Public License, version 2 (GPL2), with the classpath exception
 
  * Jakarta Annotations API - [jakarta.annotation:jakarta.annotation-api](https://projects.eclipse.org/projects/ee4j.ca)
 
-GNU Lesser General Public License
+LGPL-2.1-only
 -------------------------------
 
  * Logback Classic Module - [ch.qos.logback:logback-classic](http://logback.qos.ch/logback-classic)
