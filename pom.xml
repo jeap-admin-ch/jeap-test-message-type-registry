@@ -39,6 +39,8 @@
         <jeap.messagetypes.compile.skip>false</jeap.messagetypes.compile.skip>
         <!-- Do not deploy the pom artifact for jme-message-type-registry, this pom is only used to control the build -->
         <maven.deploy.skip>true</maven.deploy.skip>
+        <!-- The type artifacts are still published, so the pipeline's Trivy scan needs the SBOM -->
+        <cyclonedx.skipNotDeployed>false</cyclonedx.skipNotDeployed>
         <registry-git-url>https://github.com/jeap-admin-ch/jeap-test-message-type-registry.git</registry-git-url>
     </properties>
 
