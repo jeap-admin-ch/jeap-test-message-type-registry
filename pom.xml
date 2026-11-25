@@ -109,7 +109,6 @@
                         <configuration>
                             <mavenDeployGoal>deploy</mavenDeployGoal>
                             <parallel>false</parallel>
-                            <trunkMavenProfile>maven-central-publish</trunkMavenProfile>
                         </configuration>
                     </execution>
                 </executions>
