@@ -58,7 +58,7 @@ Apache License Version 2.0
  * spring-boot-starter-jackson - [org.springframework.boot:spring-boot-starter-jackson](https://spring.io/projects/spring-boot)
  * spring-boot-starter-logging - [org.springframework.boot:spring-boot-starter-logging](https://spring.io/projects/spring-boot)
  * spring-boot-starter-restclient - [org.springframework.boot:spring-boot-starter-restclient](https://spring.io/projects/spring-boot)
- * SnakeYAML - [org.yaml:snakeyaml](https://bitbucket.org/snakeyaml/snakeyaml)
+ * SnakeYAML - [org.yaml:snakeyaml](https://codeberg.org/snakeyaml/snakeyaml)
  * Jackson-core - [tools.jackson.core:jackson-core](https://github.com/FasterXML/jackson-core)
  * jackson-databind - [tools.jackson.core:jackson-databind](https://github.com/FasterXML/jackson)
 
@@ -91,8 +91,3 @@ MIT License
  * Project Lombok - [org.projectlombok:lombok](https://projectlombok.org)
  * JUL to SLF4J bridge - [org.slf4j:jul-to-slf4j](http://www.slf4j.org)
  * SLF4J API Module - [org.slf4j:slf4j-api](http://www.slf4j.org)
-
-Public Domain
--------------------------------
-
- * AOP alliance - [aopalliance:aopalliance](http://aopalliance.sourceforge.net)
